@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="poderes.css" />
+  </head>
+  <body>
+    <section>
+      <h1>¡Hola! ¿Qué poder te gustaria comprar?</h1>
+      <ul>
+        <li onclick="comprar(Fuego)">Fuego</li>
+        <li onclick="comprar(Fuerza)">Fuerza</li>
+        <li onclick="comprar(Invisible)">Invisibilidad</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Mochila</h2>
+      <ul id="inventario">
+        <!-- Acá se van a cargar los items que estén en el array
+           inventario dinámicamente con el DOM -->
+      </ul>
+      <h2 id="dinero">
+        Dinero: <span><!-- Acá va el oro disponible --></span>
+      </h2>
+    </section>
+    <script src="poderes.js"></script>
+     
+  </body>
+</html>
